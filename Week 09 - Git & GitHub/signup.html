@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+    }
+    p{
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 0;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    form{
+        background-color: white;
+        padding: 37px 3px 20px 15px;
+        width: 20rem;
+        border-radius: 5px;
+    }
+    label{
+        margin-bottom: 10px;
+    }
+
+    input, select{
+        border-radius: 3px;
+        border: 1px solid;
+        padding: 4px 0;
+        width: 100%;
+        background-color: white;
+    }
+    button{
+        width: 95%;
+        background-color: black;
+        color: white;
+        padding: 3px 0;
+        font-size: small;
+        font-weight: 100;
+        border-radius: 3px;
+    }
+</style>
+
+<body>
+    <form>
+        <p>Signup</p>
+
+        <label for="name">Name:</label><br>
+        <input type="text"><br><br>
+
+        <label for="batch">Batch:</label><br>
+        <select id="batch" style="width: 95%;">
+            <option value="Sigma 2.0">Sigma 2.0</option><br><br>
+            <option value="Sigma 3.0">Sigma 3.0</option><br><br>
+            <option value="Sigma 4.0">Sigma 4.0</option><br><br>
+        </select><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password"><br><br>
+        
+        <button>Signup</button>
+    
+    </form>
+</body>
