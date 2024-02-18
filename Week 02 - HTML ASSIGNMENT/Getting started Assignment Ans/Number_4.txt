@@ -1,0 +1,9 @@
+Number 4. 
+Ans: Below are the 3 tags that we have learned recently.
+
+1. <p></p> : The <p> HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+
+2. <div></div> : The div tag is known as Division tag. The div tag is used in HTML to make divisions of content in the web page like (text, images, header, footer, navigation bar, etc). Div tag has both open (<div>) and closing (</div>) tag and it is mandatory to close the tag.
+ 
+
+3. <h1></h1> :H1 tags improve user experience in the sense that they’re part of a web page’s hierarchical structure. The H1 is the most prominent heading on the page, then H2, then H3, etc.

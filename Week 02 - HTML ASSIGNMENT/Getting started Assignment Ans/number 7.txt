@@ -1,0 +1,15 @@
+Q>7. Explain in brief about the nesting operators in emmet.
+Ans. Nesting operators:
+     Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element.
+
+     Child: >
+     You can use > operator to nest elements inside each other:
+
+     Multiplication: *
+     With * operator you can define how many times element should be outputted:
+
+     Grouping: ()
+     Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:
+
+     Climb-up: ^
+     With > operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element:

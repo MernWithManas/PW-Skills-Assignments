@@ -1,0 +1,42 @@
+Number 3. Write a short note on tags, elements, and attributes along with relevant examples.
+
+Ans: 
+
+Tags:- Tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags.
+
+     example: <p> Paragraph Tag </p>
+
+              <h2> Heading Tag </h2>
+
+              <b> Bold Tag </b>
+
+              <i> Italic Tag </i>
+
+              <u> Underline Tag</u>
+
+
+Elements:- An HTML element is defined by a start tag, some content, and an end tag.
+Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag! HTML elements can be nested (this means that elements can contain other elements). All HTML documents consist of nested HTML elements.
+
+     example: <!DOCTYPE html>
+               <html>
+               <body>
+
+               <h1>My First Heading</h1>
+               <p>My first paragraph.</p>
+
+               </body>
+               </html>
+
+Attributes:-  HTML attributes provide additional information about HTML elements.
+All HTML elements can have attributes.
+Attributes are always specified in the start tag.
+Attributes usually come in name/value pairs like: name="value".
+
+      example: The <a> tag defines a hyperlink. The href attribute specifies the URL of the               
+               page the link goes to: <a href="https://www.w3schools.com">Visit  
+               W3Schools</a>
+
+               The <img> tag is used to embed an image in an HTML page. The src attribute 
+               specifies the path to the image to be displayed: <img src="img_girl.jpg">
+

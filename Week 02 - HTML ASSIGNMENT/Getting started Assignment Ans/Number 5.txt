@@ -1,0 +1,13 @@
+Number 5. What is emmet? List some of the advantages emmet offers.
+Ans: 
+Emmet:- Emmet is a set of plug-ins for text editors that allows for high-speed coding and editing in HTML, XML, XSLT, and other structured code formats via content assist. 
+
+Some of the advantages are-
+
+Saves a lot of time.
+
+Increase productivity.
+
+Efficient Programming.
+
+Allows to type shortcuts that are then expanded into full pieces of code after auto suggestive letter pops up.
