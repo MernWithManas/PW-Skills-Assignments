@@ -1,0 +1,5 @@
+No.5> Write a short note on the tab index.
+
+Ans: Tab index, often written as "tabindex," is an HTML attribute used to control the order in which elements receive focus when users navigate through a web page using the "Tab" key on their keyboard. It is a crucial feature for web accessibility, as it allows users who rely on keyboard navigation to move through interactive elements in a logical and predictable manner.
+
+The tabindex attribute is applied to specific elements to define their position in the keyboard focus order. When a user presses the "Tab" key, the browser moves the focus from one element to another based on their tabindex values. By default, elements are included in the tab order according to their position in the HTML document's source order.

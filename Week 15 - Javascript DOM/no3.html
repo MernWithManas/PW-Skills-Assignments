@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Counter</h1>
+
+    <div style="display: flex; gap: 30px;">
+        <button id="decrement">-</button>
+        <h2></h2>
+        <button id="increment">+</button>
+
+    </div>
+
+    <script>
+        let result = document.querySelector("h2");
+        let inc = document.getElementById("increment");
+        let dec = document.getElementById("decrement");
+
+        result.innerText = 0;
+
+        inc.addEventListener("click", function(){
+            result.innerText++;
+        })
+
+        dec.addEventListener("click", function(){
+            if (result.innerText <= 0) {
+                alert("Counting is going beyond 0.");
+            } else {
+                result.innerText--;
+            }
+        })
+
+    </script>
+
+
+</body>
+
+</html>

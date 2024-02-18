@@ -1,0 +1,21 @@
+What is DBMS ?
+
+DBMS stands for Database Management System. It is a software system that facilitates the creation, organization, retrieval, and management of data in a database. The primary purpose of a DBMS is to provide an efficient and secure way to store, access, and manage large volumes of data.
+
+Need of DBMS :
+
+Data Organization:
+
+Before the advent of DBMS, data was often stored in file systems, leading to challenges in organizing and structuring information. DBMS provides a systematic way to organize and manage data in a structured format.
+Data Retrieval Efficiency:
+
+DBMS allows for efficient retrieval of specific information through query languages, enabling users to extract relevant data without the need for manual searching through extensive file systems.
+Data Integrity and Consistency:
+
+DBMS enforces data integrity constraints, ensuring that data in the database is accurate, consistent, and follows predefined rules. This helps prevent errors and discrepancies in the stored information.
+Concurrency Control:
+
+In multi-user environments, simultaneous access to data can lead to conflicts and inconsistencies. DBMS implements concurrency control mechanisms to manage and coordinate access, ensuring data remains accurate and reliable even with concurrent transactions.
+Scalability and Flexibility:
+
+As data volumes grow, managing information in file systems becomes increasingly challenging. DBMS provides scalability by efficiently handling large datasets and offers flexibility in adapting to evolving data requirements, making it well-suited for dynamic and expanding information needs.

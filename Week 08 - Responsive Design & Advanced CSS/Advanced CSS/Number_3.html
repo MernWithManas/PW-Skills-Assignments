@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box rotate to 90 degrees</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    .container{
+        background: linear-gradient(90deg, #69c8ff, #082de5);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 35px;
+        height: 280px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+    .container:hover{
+        transform: rotate(-90deg);
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: -20px 0px;
+    }
+    .hashtag{
+        position: relative;
+        right: 45px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .date{
+        position: relative;
+        left: 30px;
+        color: white;
+        font-size: 20px;
+    }
+    ul{
+        font-size: 18px;
+    }
+    button{
+        padding: 9px ;
+        border: none;
+        border-radius: 7px;
+        font-weight: bold;
+        background: linear-gradient(50deg, rgb(53, 215, 199), rgb(47, 200, 47));
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <p class="hashtag">#01</p>
+            <p class="date">Created On : 01/01/2023</p>
+        </nav>
+        <header>
+            <h1>Important dates</h1>
+        </header>
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 - Gandhi Jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+        <button>Mark As Done</button>
+    </div>
+</body>
+</html>

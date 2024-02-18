@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient statistics bar</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .analytics {
+            display: flex;
+            flex-direction: row;
+            background-image: linear-gradient(50deg, rgb(251, 165, 251), rgb(178, 18, 236));
+            padding: 15px 20px;
+            width: 90vw;
+            justify-content: space-around;
+            text-align: center;
+            border-radius: 18px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+        }
+        .number{
+            font-size: 24px;
+            margin-bottom: -20px;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .text{
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="analytics">
+        <div class="box">
+            <p class="number">15+</p>
+            <p class="text">Years Experience</p>
+        </div>
+        <div class="box">
+            <p class="number">24.5 T+</p>
+            <p class="text">Invested in Coinyx</p>
+        </div>
+        <div class="box">
+            <p class="number">115+</p>
+            <p class="text">Professional Team</p>
+        </div>
+        <div class="box">
+            <p class="number">262+</p>
+            <p class="text">Total Global Node</p>
+        </div>
+    </div>
+</body>
+
+</html>

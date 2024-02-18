@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webkit Color declare at top.</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    :root {
+        --gray: #181c19f5;
+        --foreigner: #ffffff;
+        --para: #8c8a8a;
+        --p20: 20px;
+    }
+
+    .card {
+        background-color: var(--gray);
+        padding: var(--p20);
+        border-radius: 20px;
+        width: 400px;
+        
+    }
+
+    h1 {
+        color: var(--foreigner);
+        text-align: center;
+    }
+
+    p {
+        color: var(--para);
+    }
+
+    .para {
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+    
+    img {
+        height: 90px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 2px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--gray);
+        border-radius: 2px;
+      }
+</style>
+
+<body>
+    <div class="card">
+        <img src="apple logo.png" alt="">
+        <h1>Apple Inc</h1>
+        <div class="para">
+            <p>Lorem ipsumonsectetur adipisicing elit. Exercitationem doloremque consectetur unde aliquid dicta? Fugit
+                ex delectus obcaecati consectetur! Accusamus dolores deserunt ullam ea quidem qui quisquam aspernatur.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quibusdam reprehenderit consequuntur
+                nesciunt earum neque iure et provident optio quis, quo porro iste. Minima debitis adipisci, ccusamus.
+            </p>
+            <p>Lorem ipamet consectetur adipisicing elit. Ab, enim laudantium ad repudiandae, amet corporis itaque,
+                distinctio modi facilis aliquam possimus aliquid odit incidunt molestiae perferendis sunt blanditore
+                iusto.</p>
+            <p>Lorem ipsumonsectetur adipisicing elit. Exercitationem doloremque consectetur unde aliquid dicta? Fugit
+                ex delectus obcaecati consectetur! Accusamus dolores deserunt ullam ea quidem qui quisquam aspernatur.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quibusdam reprehenderit consequuntur
+                nesciunt earum neque iure et provident optio quis, quo porro iste. Minima debitis adipisci, ccusamus.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

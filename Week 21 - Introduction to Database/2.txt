@@ -1,0 +1,9 @@
+A file-based storage system is an older and simpler method of organizing and storing data on a computer. In this system, data is stored in individual files, each containing information related to a specific task or application. These files are typically organized into directories or folders. While file-based storage systems have been widely used historically, they come with several challenges that limit their efficiency and flexibility, especially when compared to modern database systems. 
+
+ile-based storage systems pose several challenges due to their inherent limitations. One major issue is data redundancy, as information is often duplicated across multiple files, leading to inefficiencies and increased risk of inconsistencies. Data isolation is another challenge, hindering the seamless sharing of information between applications and impeding the maintenance of a unified organizational view. These systems exhibit strong data dependence, making structural changes labor-intensive and prone to errors. Retrieving specific data can be cumbersome, lacking the efficiency of modern databases' robust query capabilities.
+
+Concurrency and data integrity issues arise in file-based systems, as simultaneous access by multiple users or applications may result in data corruption or inconsistencies. Scalability becomes challenging as data volume grows, hindering performance and adaptability. Security concerns arise due to a lack of sophisticated access control mechanisms, potentially exposing vulnerabilities. Additionally, file-based systems struggle with representing and maintaining complex data relationships. In summary, while foundational, file-based storage systems face challenges related to redundancy, isolation, dependence, retrieval efficiency, concurrency, scalability, security, and support for data relationships compared to modern database solutions.
+
+
+
+

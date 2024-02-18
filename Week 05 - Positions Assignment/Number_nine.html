@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown on hover</title>
+</head>
+<style>
+    span{
+        padding: 14px;
+        background-color: green;
+        color: white;
+    }
+    .dropdown{
+        position: absolute;
+        top: 20px;
+    }
+    .options{
+        background-color: rgb(199, 222, 199);
+        max-height: 150px;
+        overflow-y: scroll;
+        margin-top: 13px;
+        display: none;
+    }
+    .dropdown:hover .options{
+        display: block;
+    }
+    .links{
+        padding: 8px;
+    }
+</style>
+<body>
+    <div class="dropdown">
+        <span>Hover here for links</span>
+        <div class="options">
+            <div class="links">Option</div>
+            <div class="links">Option</div>
+            <div class="links">Option</div>
+            <div class="links">Option</div>
+            <div class="links">Option</div>
+            <div class="links">Option</div>
+            <div class="links">Option</div>
+        </div>
+    </div>
+</body>
+</html>

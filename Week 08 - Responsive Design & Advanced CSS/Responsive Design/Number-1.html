@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    nav>img {
+        height: 35px;
+        width: 30px;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        background-color: rgb(36, 36, 36);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu>a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+    .menu> a:hover{
+        font-size: 17px;
+        color: rgb(83, 99, 216);
+    }
+    button:hover{
+        background-color: rgb(83, 99, 216);
+    }
+    button {
+        padding: 5px 28px;
+        background-color: rgb(38, 64, 255);
+        border: none;
+        color: white;
+
+    }
+    
+
+    .fa-bars,
+    .fa-solid {
+        display: none;
+    }
+
+    
+
+
+    
+    @media screen and (min-width: 300px) and (max-width: 768px) {
+
+        .menu> a,
+        .login {
+            display: none;
+        }
+
+        .fa-bars,
+        .fa-solid {
+            font-size: 30px;
+            float: right;
+            position: absolute;
+            right: 40px;
+            display: flex;
+            cursor: pointer;
+            color: white;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- NAVIGATION BAR GOES HERE !!!!!!!!!!!!! -->
+
+    <nav>
+        <img src="apple logo.png" alt="" class="logo">
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button class="login">Login</button>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+</body>
+
+</html>

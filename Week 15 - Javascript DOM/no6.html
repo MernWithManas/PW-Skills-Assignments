@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let content = document.querySelector("body");
+        content.innerText = "Which is your favourite Programming Language: ";
+
+        theSelection = document.createElement("select");
+        content.appendChild(theSelection);
+        
+        let theOptions = ["Javascript", "Java", "Python", "C++"];
+
+        theOptions.forEach(language => {
+            let options = document.createElement("option");
+            theSelection.appendChild(options);
+            options.innerText = language;
+        })
+
+    </script>
+
+</body>
+
+</html>

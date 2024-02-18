@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random images gallery - Responsive</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+
+    }
+
+    img {
+        height: 300px;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+
+    .gallery-box {
+        object-fit: cover;
+        margin: 20px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <h1>Random Images</h1>
+    <di class="grid-gallery">
+        <div class="gallery-box"><img src="Assets/1.jpg" alt=""></div>
+        <div class="gallery-box"><img src="Assets/2.jpg" alt=""></div>
+        <div class="gallery-box"><img src="Assets/3.jpg" alt=""></div>
+        <div class="gallery-box"><img src="Assets/4.jpg" alt=""></div>
+        <div class="gallery-box"><img src="Assets/5.jpg" alt=""></div>
+        <div class="gallery-box"><img src="Assets/6.jpg" alt=""></div>
+
+    </di>
+</body>
+
+</html>

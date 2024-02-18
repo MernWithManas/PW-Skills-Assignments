@@ -1,0 +1,18 @@
+Number 06> List any 5 semantic tags in HTML along with their description.
+
+Answer:  (i) <header>:
+Description: The <header> element represents the introductory or navigational content at the top of a web page or a section within the page. It typically includes logos, navigation menus, page titles, and other content that helps users identify the website or section they are visiting.
+
+(ii) <nav>:
+Description: The <nav> element represents a block of navigation links that allow users to move between different pages or sections of a website. It is specifically used to mark navigation menus, not just any list of links, ensuring that assistive technologies and search engines recognize it as the primary navigation.
+
+(iii) <main>:
+Description: The <main> element denotes the main content area of a web page. It should contain the core content that is unique to each page, excluding repeated elements like headers, footers, and sidebars. Using <main> helps search engines and assistive technologies to identify and focus on the primary content.
+
+(iv) <article>:
+Description: The <article> element represents a self-contained, independent piece of content that could be distributed and reused independently from the rest of the page. It is suitable for blog posts, news articles, forum posts, or any other content that stands on its own and is not part of the main content flow.
+
+(v) <footer>:
+Description: The <footer> element represents the footer or closing section of a web page or a specific section within the page. It typically includes copyright notices, contact information, related links, and other content that is common across multiple pages.
+
+Using semantic tags not only improves the accessibility and organization of your HTML documents but also helps with SEO (Search Engine Optimization) as search engines can better understand the structure and hierarchy of your content. It is always a good practice to use appropriate semantic tags instead of generic <div> elements for better code readability and maintainability.

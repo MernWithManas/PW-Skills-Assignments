@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <input type="text" placeholder="Search for items"><br><br>
+
+    <span style="font-weight: bold; font-size: large;">Results:</span>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind CSS</li>
+        <li>GitHub</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <script>
+        let theInput = document.querySelector("input")
+        let ul = document.querySelector("ul")
+        let liItems = ul.getElementsByTagName("li")
+
+        theInput.addEventListener("input", function(){
+            let searchValue = theInput.value.toLowerCase()
+
+            for (let i=0; i<liItems.length; i++) {
+                let virus = liItems[i]
+                let actualVirus = virus.textContent.toLowerCase()
+
+                if (actualVirus.includes(searchValue)) {
+                    virus.style.display = "block"
+                } else {
+                    virus.style.display = "none"
+                }
+
+            }
+        })                                                                                                             
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+    h1{
+        font-weight: 600;
+        text-align: center;
+    }
+    .time-table{
+        background-color: rgb(0, 121, 196);
+        border: 3px solid black;
+        padding: 10px;
+    }
+    .time-row-one{
+        border: 1px dashed black;
+        padding: 20px;
+        font-weight: 400;
+    }
+    .time{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        background-color: salmon;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        /* padding: 20px; */
+        border: 1px dashed black;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .row{
+        padding: 20px;
+        border: 1px dashed black;
+        text-align: center;
+    }
+    .day{
+        background-color: rgb(145, 30, 145);
+    }
+    .english{
+        background-color: rgb(11, 190, 194);
+    }
+    .biology{
+        background-color: rgb(11, 190, 194);
+    }
+    .physics{
+        background-color: rgb(11, 190, 194);
+    }
+    .chemistry{
+        background-color: rgb(11, 190, 194);
+    }
+    .lunch{
+        background-color: rgb(231, 199, 23);
+        border: none;
+    }
+    .last-lab{
+        background-color: rgb(188, 200, 211);
+        grid-column:  7 / 9;
+    }
+    .first-lab{
+        background-color: rgb(188, 200, 211);
+        grid-column:  2 / 4;
+    }
+    .green{
+        background-color: green;
+        grid-column: 7 / 9;
+    }
+</style>
+<body>
+    <h1>School Timetable</h1>
+    <div class="time-table">
+        <div class="time">
+            <div class="time-row-one">TIME</div>
+            <div class="time-row-one">08:00 AM - 09:00 AM</div>
+            <div class="time-row-one">09:00 AM - 10:00 AM</div>
+            <div class="time-row-one">10:00 AM - 11:00 AM</div>
+            <div class="time-row-one">11:00 AM - 12:00 PM</div>
+            <div class="time-row-one">12:00 PM - 02:00 PM</div>
+            <div class="time-row-one">02:00 PM - 03:00 PM</div>
+            <div class="time-row-one">03:00 PM - 04:00 PM</div>
+        </div>
+
+        <div class="monday">
+            <div class="row day">Monday</div>
+            <div class="row english">English</div>
+            <div class="row biology">Biology</div>
+            <div class="row physics">Physics</div>
+            <div class="row chemistry">Chemistry</div>
+            <div class="row lunch">L</div>
+            <div class="row last-lab">Chemistry LAB</div>
+        </div>
+
+        <div class="tuesday">
+            <div class="row day">Tuesday</div>
+            <div class="row first-lab">Biology LAB</div>
+            <div class="row physics">Physics</div>
+            <div class="row chemistry">Chemistry</div>
+            <div class="row lunch">U</div>
+            <div class="row english">English</div>
+            <div class="row biology">Biology</div>
+        </div>
+
+        <div class="wednesday">
+            <div class="row day">Wednesday</div>
+            <div class="row english">English</div>
+            <div class="row biology">Biology</div>
+            <div class="row physics">Physics</div>
+            <div class="row chemistry">Chemistry</div>
+            <div class="row lunch">N</div>
+            <div class="row green">Games</div>
+        </div>
+
+        <div class="thursday">
+            <div class="row day">Thursday</div>
+            <div class="row first-lab">Biology LAB</div>
+            <div class="row physics">Physics</div>
+            <div class="row chemistry">Chemistry</div>
+            <div class="row lunch">C</div>
+            <div class="row english">English</div>
+            <div class="row biology">Biology</div>
+        </div>
+
+        <div class="friday">
+            <div class="row day">Friday</div>
+            <div class="row english">English</div>
+            <div class="row biology">Biology</div>
+            <div class="row physics">Physics</div>
+            <div class="row chemistry">Chemistry</div>
+            <div class="row lunch">H</div>
+            <div class="row last-lab">Chemistry LAB</div>
+        </div>
+
+        <div class="saturday">
+            <div class="row day">Saturday</div>
+            <div class="row first-lab">Biology LAB</div>
+            <div class="row physics">Physics</div>
+            <div class="row chemistry">Chemistry</div>
+            <div class="row lunch">Break</div>
+            <div class="row green">LET OFF</div>
+        </div>
+    </div>
+</body>
+</html>

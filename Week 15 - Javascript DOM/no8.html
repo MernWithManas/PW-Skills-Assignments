@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="display: grid; height: 100vh; place-content: center;">
+    <div style="border: 1px solid rgb(255, 255, 255); padding: 20px 70px; border-radius: 3px;"></div>
+
+    <script>
+        //declare body
+        //create time element in hh.mm.sec
+        //create hex variable
+        //set bg to time + hex(#)
+
+        let body = document.querySelector("body");
+        let div = document.querySelector("div");
+        div.style.color = "white"
+
+        function timeNow() {
+            const today = new Date();
+            const hour = today.getHours();
+            const minutes = today.getMinutes();
+            const seconds = today.getSeconds();
+            const theTime = (`${String(hour).padStart(2, "0")} : ${String(minutes).padStart(2, "0")} : ${String(seconds).padStart(2, "0")} `)
+            div.innerHTML = theTime
+
+            let hash = "#"
+            let hexCode = (`${hash}${String(hour).padStart(2, "0")}${String(minutes).padStart(2, "0")}${String(seconds).padStart(2, "0")}`)
+            body.style.backgroundColor = hexCode
+        }
+
+        timeNow()
+        setInterval(timeNow, 1000)
+
+        
+
+    </script>
+</body>
+
+</html>

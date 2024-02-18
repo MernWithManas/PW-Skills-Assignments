@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <style>
+    @font-face {
+        font-family: newyork;
+        src: url(Font/Chomsky.otf);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sitename {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        font-family: 'newyork';
+        background-color: blanchedalmond;
+        font-size: 30px;
+
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        background-color: rgb(255, 255, 255);
+        list-style: none;
+    }
+
+    nav>ul>li>a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-top: 1px double black;
+        border-bottom: 1px double black;
+    }
+
+    nav>ul>li :hover {
+        background-color: black;
+        color: white;
+    }
+
+    nav :hover {
+        color: white;
+    }
+
+    nav>ul>li>a {
+        padding: 15px;
+    }
+
+    main {
+        padding: 50px 50px 50px 50px;
+    }
+
+    p,
+    li {
+        font-family: "oswald";
+        font-weight: 300;
+    }
+
+    footer {
+        background-color: blanchedalmond;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        border-top: 1px double black;
+        padding: 25px;
+    }
+
+    .authorimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .credits>.authorimg>img {
+        height: 80px;
+        border-radius: 50%;
+        border: 1px double black;
+    }
+
+    footer h4 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    table {
+        border: 2px solid black;
+    }
+
+    td {
+        border: 1px double black;
+        padding: 5px;
+    }
+
+    .social_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: aliceblue;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .social_links> a {
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        padding: 50px 50px 50px 50px;
+    }
+
+</style>
+<body>
+    <header>
+
+        <div class="sitename">
+            <h1>The Html Times</h1>
+        </div>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Css Times.html">Css</a></li>
+                <li><a href="Javascript world news.html">Javascript World</a></li>
+                <li> <a href="Web Dev 24intoSeven.html">Web Dev 24*7</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2> CSS - Website Under Construction</h2>
+    </main>
+
+    <footer>
+        <div class="credits">
+            <div class="authorimg">
+                <img src="Author/Hockey rkl passport.jpg" alt="manas">
+            </div>
+            <h4>
+                Manas Kumar Sahu
+            </h4>
+        </div>
+        <div class="social_links">
+            <a href="https://www.linkedin.com/in/manas-kumar-sahu-abb383155/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://twitter.com/Manas_ku_sahu" target="_blank"><i class="fa-brands fa-square-twitter fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/manas.zip/" target="_blank"><i class="fa-brands fa-square-instagram fa-lg"></i>
+            </a>
+            <a href="https://github.com/usernamemanas" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

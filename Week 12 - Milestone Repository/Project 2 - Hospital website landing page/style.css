@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --button: #0099ff;
+}
+
+/* HOME PAGE SECTION GOES HERE!!!!!!!!!!!!!!!!!!!!! */
+
+.home {
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+section {
+    display: flex;
+    padding: 20px 180px;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 180px;
+}
+
+.nav-links>a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav>button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--button);
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+
+.left-hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.left-hero>p {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.left-button {
+    width: 130px;
+    height: 46px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--button);
+    color: white;
+}
+
+.right-button {
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+/* Appointment Section goes here!!!!!!!!!!!!!!!!! */
+
+.form {
+    background-color: white;
+    padding: 40px 35px;
+    border-radius: 10px;
+    border: none;
+    line-height: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.form>span {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+form>button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: var(--button);
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+}
+
+form>input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.063);
+}
+
+form> ::placeholder {
+    padding: 0 15px;
+}
+
+form>select {
+    padding: 0 15px;
+    color: gray;
+    background-color: rgba(0, 0, 0, 0.063);
+
+}
+
+form>select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 3px;
+}
+
+/* SECTION 22222222222222 GOES HERE !!!!!!!!!!!! */
+
+.section {
+    display: block;
+    margin: auto;
+    padding: 100px 0;
+    height: 100vh;
+}
+
+.section-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-heading>h3 {
+    font-size: 35px;
+}
+
+.section-heading>p {
+    color: gray;
+    margin-bottom: 50px;
+    line-height: 28px;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.tab {
+    border: 1px solid skyblue;
+    border-radius: 10px;
+}
+
+.heading-box {
+    background-color: skyblue;
+    padding: 25px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 10px;
+}
+
+.round-logo {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.fa-solid.fa-users {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.heading-box>span {
+    font-weight: bold;
+}
+
+.points {
+    padding: 20px 30px;
+}
+
+.points>ul {
+    list-style: none;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.points>ul>li::before {
+    content: "- ";
+}
+
+.points>a {
+    color: rgb(48, 140, 193);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION THREEE REVIEWS GOES HERE!!!!!!!!!!!!!!!!! */
+
+.section-three {
+    background-color: rgb(245, 244, 244);
+    height: 85vh;
+}
+
+.review-section {
+    display: flex;
+    gap: 50px;
+}
+
+.review-box {
+    border: 2px solid rgba(0, 0, 0, 0.121);
+    border-radius: 7px;
+    background-color: white;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-box>img {
+    height: 50px;
+    width: 50px;
+}
+
+/* SECTION FOUR FAQS GOES HERE!!!!!!!!!!!!!!!!! */
+
+.section-four {
+    height: 120vh;
+}
+
+.faqs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    row-gap: 40px;
+    column-gap: 200px;
+    line-height: 25px;
+}
+
+.faqs>div>div>span {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.faqs>div>div>p {
+    color: gray;
+}
+
+.fa-solid.fa-greater-than {
+    position: relative;
+    right: 25px;
+    top: 25px;
+}
+
+/* PRICING SECTION GOES HERE!!!!!!!!!!!!!!!!!!!! */
+
+.section-five {
+    padding: 80px 180px;
+    background-color: rgb(245, 244, 244);
+    height: 140vh;
+
+}
+
+.pricing-box {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.free,
+.premium {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 40px 30px;
+
+}
+
+.standard {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 40px 30px;
+    background-color: rgb(1, 1, 24);
+    color: white;
+    margin-top: -30px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.free>p,
+.premium>p {
+    text-align: center;
+    color: rgb(76, 76, 76);
+    margin-bottom: 30px;
+}
+
+.standard>p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.price {
+    margin-bottom: 30px;
+    color: rgb(0, 138, 223);
+    text-align: center;
+}
+
+.price>span {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.price>sup {
+    font-weight: bolder;
+    position: relative;
+    bottom: 12px;
+}
+
+.price>sub {
+    position: relative;
+    right: 12px;
+    font-weight: 300;
+}
+
+.fa-solid.fa-check {
+    background-color: rgb(7, 209, 7);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.fa-solid.fa-check.gray {
+    background-color: rgb(187, 187, 187);
+}
+
+.pricing-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+}
+
+.free>ul,
+.standard>ul,
+.premium>ul {
+    list-style: none;
+}
+
+.free>ul>li,
+.standard>ul>li,
+.premium>ul>li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* SUBSCRIBE NEWSLETTER SECTION GOES HERE!!!!!!!!!!!! */
+
+.subscribe {
+    color: white;
+    background-color: rgb(1, 1, 24);
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 180px;
+    align-items: center;
+}
+.subscribe>div> span{
+    font-size: 33px;
+    font-weight: bold;
+}
+.subscribe>div> p{
+    color: rgb(193, 193, 193);
+    margin-top: 10px;
+}
+.newsletter{
+    display: flex;
+}
+.newsletter>button{
+    height: 50px;
+    width: 90px;
+    border: none;
+    background-color: var(--button);
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.newsletter>input{
+    color: gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 50px;
+    width: 190px;
+
+}
+.newsletter>input::placeholder{
+    padding: 0 12px;
+}
+
+/* FOOTER SECTION GOES HERE!!!!!!!!!!!!!!!!! */
+
+footer{
+    display: flex;
+    padding: 50px 180px;
+    justify-content: space-between;
+}
+.footer-heading{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+footer>div>p{
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+    margin-bottom: 20px;
+
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links>a{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-size: 15px;
+}
+.footer-social{
+    display: flex;
+    gap: 10px;
+}
+.footer-credit{
+    padding: 25px 0;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 71, 71);
+
+}

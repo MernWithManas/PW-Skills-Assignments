@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Guru</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+        * {
+            padding: 0 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            padding-top: 50px;
+        }
+
+        /* NAV SECTION GOES HERE!!!!!!!!!!!!!!!!!!!!!! */
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 120px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 60px;
+        }
+
+        .nav-links>a {
+            text-decoration: none;
+            color: black;
+            font-weight: 300;
+        }
+
+        .nav-links>a:hover {
+            color: orangered;
+            font-weight: 500;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            font-size: x-large;
+            font-weight: 600;
+            gap: 10px;
+        }
+        
+        .nav-button {
+            padding: 15px 30px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        /* HERO SECTION GOES HERE!!!!!!!!!!!!!!!!!!!!!! */
+
+        .hero-section {
+            display: flex;
+            padding: 0 120px;
+            height: 70vh;
+            margin-top: 120px;
+        }
+
+        /* HERO ONE SECTION GOES HERE!!!!!!!!!!!!!!!!!!!!!! */
+        .hero-one {
+            width: 130%;
+        }
+
+        h1 {
+            font-size: 80px;
+            text-transform: uppercase;
+            line-height: 100px;
+            /* word-spacing: 20px; */
+        }
+
+        .hero-one>p {
+            margin-top: 50px;
+            font-weight: 300;
+            border-left: 1px solid rgba(0, 0, 0, 0.767);
+            padding-left: 20px;
+            font-size: 25px;
+            line-height: 45px;
+            color: rgba(0, 0, 0, 0.767);
+
+        }
+
+        .hero-buttons {
+            margin-top: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .hero-button-one {
+            padding: 15px 30px;
+            background-color: orangered;
+            border: none;
+            color: white;
+        }
+
+        .hero-button-two {
+            padding: 15px 30px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        .curve-arrow {
+            display: block;
+            margin: auto;
+            position: relative;
+            bottom: 50px;
+        }
+
+        /* HERO TWO SECTION GOES HERE!!!!!!!!!!!!!!!!! */
+
+        .hero-two {
+            width: 70%;
+        }
+
+        .hero-two-images>img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 50%;
+        }
+
+        .hero-two-images {
+            display: flex;
+            justify-content: center;
+        }
+
+        .number-one {
+            z-index: 10;
+        }
+
+        .number-two {
+            overflow: hidden;
+            z-index: 9;
+        }
+
+        .number-three {
+            z-index: 8;
+        }
+
+        .green-arrow {
+            position: absolute;
+            bottom: 50px;
+        }
+
+        .orange-arrow {
+            position: relative;
+            bottom: 40px;
+            right: 80px;
+        }
+
+        .circle {
+            position: absolute;
+            right: 50px;
+            bottom: 150px;
+        }
+
+        /* FEATURES SECTION GOES HERE!!!!!!!!!!!!!!!! */
+
+        .features {
+            background-color: rgb(13, 7, 37);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 80px 120px;
+            color: white;
+            gap: 60px;
+        }
+
+        .features>div>img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .features>div>span {
+            font-size: 35px;
+            padding-bottom: 50px;
+            line-height: 55px;
+        }
+
+        .feature-tagline {
+            font-weight: 300;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+
+        .features-para {
+            font-weight: 100;
+            line-height: 30px;
+        }
+
+        @media screen and (min-width: 680px) {
+        img.hamburger{
+            display: none;
+        }
+        img.profile{
+            display: none;
+        }
+    }
+        @media screen and (max-width: 680px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav {
+                margin-top: 25px;
+                display: flex;
+                padding: 0 20px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .nav-button {
+                display: none;
+            }
+            .logo-section> img{
+                width: 25px;
+            }
+            .logo-section> span{
+                font-size: 18px;
+            }
+            .hero-section {
+                display: flex;
+                flex-direction: column;
+                padding: 0 20px;
+                margin: 0;
+                height: 87vh;
+                width: auto;
+            }
+
+            h1 {
+                font-size: 35px;
+                line-height: 45px;
+                padding-top: 35px;
+            }
+
+            .hero-one {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .hero-one>p {
+                font-size: 16px;
+                line-height: 25px;
+                margin-top: 35px;
+                padding-left: 10px;
+            }
+
+            .hero-buttons {
+                position: absolute;
+                bottom: 120px;
+                left: 55px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-two {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+
+            .hero-two-images {
+                padding: 0;
+                margin-top: 50px;
+            }
+
+            .hero-two-images>img {
+                width: 70%;
+                height: 300px;
+                /* height: 50%; */
+            }
+
+            .hero-buttons{
+                display: flex;
+                gap: 20px;
+            }
+
+            .green-arrow {
+                position: absolute;
+                bottom: 175px;
+                width: 20px;
+                left: 76px;
+            }
+
+            .orange-arrow {
+                position: absolute;
+                bottom: 505px;
+                left: 65px;
+                width: 20px;
+            }
+
+            .circle {
+                position: absolute;
+                right: 30px;
+                bottom: 239px;
+                width: 15px;
+            }
+
+            .curve-arrow {
+                position: absolute;
+                bottom: 55px;
+                right: 50px;
+                width: 80px;
+            }
+
+
+            .features {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 50px 55px;
+                margin: 0;
+                gap: 50px;
+            }
+
+
+            .features>div>span {
+                font-size: 32px;
+                padding-bottom: 0;
+                line-height: 51px;
+            }
+
+            p.feature-tagline {
+                font-size: 14px;
+                letter-spacing: 1.5px;
+                line-height: 22px;
+            }
+
+            .features-para {
+                font-size: 14px;
+                letter-spacing: 1.5px;
+                line-height: 22px;
+            }
+
+            .feature-tagline {
+                font-weight: 300;
+                line-height: 30px;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            h3 {
+                font-size: 23px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            .features > div {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAV SECTION GOES HERE!!!!!!!!!!!!!!!!!!!!!!! -->
+    <nav>
+        <img class="hamburger" src="./Images/menu-icon.png" alt="">
+        <div class="logo-section"><img src="./Images/logo.png">
+            <span class="logo-name">E-GURU</span>
+        </div>
+        <img class="profile" src="./Images/user-profile.png">
+        <div class="nav-links">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Features</a>
+            <a href="">How it works</a>
+        </div>
+        <button class="nav-button">Sign Up</button>
+    </nav>
+
+    <!-- HERO SECTION GOES HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <section class="hero-section">
+        <div class="hero-one">
+            <h1>Study from <br> home with expert</h1>
+            <p>A learning system based on formalised <br> teaching with the help of recources.</p>
+            <div class="hero-buttons">
+                <button class="hero-button-one">Get Started</button>
+                <button class="hero-button-two">Learn more</button>
+            </div>
+            <img class="curve-arrow" src="./Images/curve-arrow.png">
+        </div>
+        <div class="hero-two">
+            <div class="hero-two-images">
+                <img class="number-three" src="./Images/main-image-bg.png">
+                <img class="number-two" src="./Images/main-image.png">
+                <img class="number-one" src="./Images/main-image-pattern.png">
+            </div>
+
+            <img class="green-arrow" src="Images/green-arrow.png">
+            <img class="orange-arrow" src="Images/orange-arrow.png">
+            <img class="circle" src="Images/circle.png">
+
+    </section>
+
+    <section class="features">
+        <div>
+            <span>WHY WE ARE <br> THE BEST</span>
+            <P class="feature-tagline">a learning system based on formalised teaching with help of....</P>
+        </div>
+        <div>
+            <img style="padding: 10px; border-radius: 8px; background-color: rgb(43, 206, 190);"
+                src="Images/vector3.png">
+            <h3>EXPERT TEACHER</h3>
+            <p class="features-para">a learning system based on formalised teaching</p>
+        </div>
+        <div>
+            <img style="padding: 10px; border-radius: 8px; background-color: rgb(220, 71, 8);" src="Images/vector2.png">
+            <h3>ONLINE COURSES</h3>
+            <p class="features-para">a learning system based on formalised teaching</p>
+        </div>
+        <div>
+            <img style="padding: 10px; border-radius: 8px; background-color:rgb(44, 41, 233);" src="Images/vector1.png">
+            <h3>24/7 SUPPORT</h3>
+            <p class="features-para">a learning system based on formalised teaching</p>
+        </div>
+    </section>
+</body>
+
+</html>

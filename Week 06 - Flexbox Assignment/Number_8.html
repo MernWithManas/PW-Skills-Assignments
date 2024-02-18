@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round shaped images one after one</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(42, 42, 42);
+        }
+        .container{
+            display: flex;
+            padding-top: 20vh;
+            justify-content: center;
+        }
+        img{
+            height: 220px;
+            border: 10px solid white;
+            border-radius:  50%;
+            position: relative;
+            outline: none;
+        }
+        .steve{
+            z-index: 10;
+            left: 37px;
+        }
+        .sadhguru{
+            z-index: 9;
+        }
+        .honey-paaji{
+            right: 37px;
+            z-index: 8;
+        }
+        .bill{
+            right: 74px;
+            z-index: 7
+        }
+
+
+    </style>
+    <div class="container">
+        <img class="steve" src="steve jobs.jpg" alt="">
+        <img class="sadhguru" src="sadhguru.jpg" alt="">
+        <img class="honey-paaji" src="honey singh.jpg" alt="">
+        <img class="bill" src="bill gates.jpg" alt="">
+    </div>
+</body>
+</html>

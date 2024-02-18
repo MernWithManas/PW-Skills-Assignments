@@ -1,0 +1,26 @@
+Q - Explain 5 challenges of file-based storage system which was tackled by dbms.
+
+Data Redundancy:
+
+Challenge in File-Based Systems: In file-based storage, the same data might be duplicated across multiple files, leading to redundancy. If updates are not consistently applied, it can result in inconsistencies and wasted storage space.
+DBMS Solution: A relational database management system (RDBMS) addresses this by providing a structured way to organize data with tables and relationships. Redundancy is minimized through normalization, reducing the likelihood of inconsistencies.
+Data Isolation:
+
+Challenge in File-Based Systems: Data in file-based systems is often isolated within individual applications, making it challenging to share and maintain a unified view of information across an organization.
+DBMS Solution: DBMS facilitates data integration by allowing multiple applications to access the same database. This promotes data consistency and coherence across different parts of an organization.
+Data Dependence:
+
+Challenge in File-Based Systems: Changes to the structure of data, such as adding a new field, may require modifications to all programs that use that data, leading to high maintenance costs and increased complexity.
+DBMS Solution: DBMS abstracts the physical structure of data from the applications that use it. This reduces data dependence, allowing changes to the database structure without affecting the applications, promoting easier maintenance.
+Limited Data Retrieval Capabilities:
+
+Challenge in File-Based Systems: Retrieving specific information from a file-based system can be cumbersome, lacking the efficiency of modern databases' powerful query languages.
+DBMS Solution: DBMS provides query languages (e.g., SQL) that enable users to retrieve specific data efficiently. This enhances the ability to search, filter, and extract information based on various criteria.
+Concurrency and Data Integrity:
+
+Challenge in File-Based Systems: Simultaneous access by multiple users or applications in file-based systems may result in data corruption or inconsistencies.
+DBMS Solution: DBMS employs concurrency control mechanisms to manage simultaneous access, ensuring data integrity. Transactions are processed in a way that maintains the consistency and reliability of the data even in a multi-user environment.
+
+
+
+

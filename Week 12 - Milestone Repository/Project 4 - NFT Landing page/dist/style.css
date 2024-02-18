@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --purple: rgb(226, 81, 255);
+    --indigo: #5850ff;
+    --sky: rgb(68, 168, 255);
+    --bg: #160e2a;
+}
+
+.gradient-border-nav {
+    width: 100px;
+    border: double transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        linear-gradient(to right, var(--sky), var(--purple));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.hero-text {
+    font-family: 'Exo', sans-serif;
+    background: -webkit-linear-gradient(#f1b4ff, #a679ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.fa-solid.fa-play {
+    color: var(--purple);
+}
+
+.gradient-circle {
+    background: linear-gradient(180deg, var(--indigo) 0%, var(--purple) 100%);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.gradient-border-all {
+    border: double transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        linear-gradient(to right, var(--sky), var(--purple));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.gradient-border-curve {
+    border-top: double transparent;
+    border-bottom: double transparent;
+    border-right: double transparent;
+    border-radius: 10% 25% 25% 10% / 0% 50% 50% 0%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        linear-gradient(to right, var(--sky), var(--purple));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height: 600px;
+    backdrop-filter: transparent(50%);
+}
+
+
+
+.footer-border {
+    border-top: 10px double;
+    background-image: linear-gradient(to right, var(--sky), var(--purple));
+}
+
+.money-protection {
+    height: 70px;
+}
+
+.usa-one {
+    left: 8.5%;
+    bottom: 20%;
+}
+
+.hero-bg {
+    background: radial-gradient(circle at 11% 0%, #f700ff, rgba(114, 0, 215, 1), rgba(46, 0, 133, 1), rgba(35, 0, 94, 1), rgba(28, 0, 94, 1), rgba(21, 0, 72, 1), rgba(15, 0, 63, 1));
+    border-radius: 10% 10% 50% 50% / 0% 0% 10% 10%;
+}
+
+header {
+    backdrop-filter: blur(10px);
+}
+
+.nft-bg {
+    backdrop-filter: blur(15%);
+    background: radial-gradient(circle at 0% 55%, rgba(145, 0, 193, 1), #160e2a, #160e2a, #160e2a)
+}
+
+.sell-nft-border {
+    border-bottom: double 2px transparent;
+    border-radius: 10% 10% 50% 50% / 0% 0% 10% 10%;
+    background-image: linear-gradient(var(--bg), var(--bg)),
+    radial-gradient(circle, rgba(122, 70, 255, 1) 0%, rgba(22, 14, 42, 1) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.light-border {
+    border: double 1px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(to top left, rgba(255, 203, 70, 0.452) 0%, rgba(22, 14, 42, 1) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    backdrop-filter: blur(10px);
+}

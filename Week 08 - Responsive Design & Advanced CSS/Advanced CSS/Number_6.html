@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change image from colorful to grayscale on hovering</title>
+</head>
+<body>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .image {
+            height: 400px;
+            width: 600px;
+            background-image: url(./birthday.avif);
+            background-size: cover;
+            border: 3px solid black;
+            /* transition: (all 2s ease-in-out); */
+            
+        }
+
+        .image:hover {
+            filter: grayscale(100%);
+            transition: ease-in-out 0.5s;
+        }
+    </style>
+
+    <body>
+        <h1>Hover to Reveal the Image</h1>
+        <div class="image">
+
+
+        </div>
+    </body>
+
+</html>

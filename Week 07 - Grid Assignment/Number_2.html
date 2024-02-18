@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food with Navbar using grid</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro {
+        display: block;
+        margin: auto;
+        padding: 0 10%;
+    }
+
+    .readmore {
+        padding: 12px 27px;
+        background-color: black;
+        color: white;
+    }
+
+    .banner {
+        background-color: #ffee00;
+    }
+
+    .banner>img {
+        height: 100vh;
+        width: 550px;
+        object-fit: cover;
+
+    }
+
+    .logo {
+        width: 45px;
+        margin-left: 5px;
+        align-self: center;
+    }
+
+    nav {
+        margin-bottom: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    nav> button {
+        padding: 8px 60px;
+        background-color: rgb(31, 217, 31);
+        color: white;
+        border: 0px;
+        position: absolute;
+        right: 5px;
+        align-self: center;
+    }
+
+    .login {
+        align-self: center;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        margin: 0 15px 0 15px;
+    }
+
+    .nav-items {
+        justify-self: center;
+        align-self: center;
+    }
+</style>
+
+<body>
+    <nav>
+        <img class="logo" src="apple_10072107.png" alt="">
+        <div class="nav-items">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    <div class="container">
+        <section class="intro">
+            <h1>Healthy Food</h1><br><br>
+            <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum, incidunt error obcaecati
+                veritatis modi ipsa iste iusto magni velit quam, unde quasi ab aspernatur hic fugiat eveniet id ad!ipsum
+                dolor sit amet consectetur, adipisicing elit. Eos similique eaque nobis iste! Fugit mollitia quod
+                accusamus a nemo itaque expedita magni optio odit repellendus! Animi consequatur labore atque officia.
+            </p>   <br><br>
+            <button class="readmore">Read More</button>
+        </section>
+        <section class="banner">
+            <img src="istock-1155240408.jpg">
+        </section>
+    </div>
+</body>
+
+</html>

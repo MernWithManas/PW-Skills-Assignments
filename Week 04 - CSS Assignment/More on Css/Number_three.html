@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different border style on navigation bar.</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        text-align: center;
+        background-color: rgb(183, 255, 231);
+        padding: 2%;
+        height: 100px;
+        align-items: center;
+        display: flex;
+    }
+    a{
+        font-size: 17px;
+        padding: 2%;
+        color: maroon;
+        margin: 0 20px 0 20px;
+        text-decoration: none;
+    }
+    a:hover{
+        color:darkblue;
+    }
+    
+    .link1{
+        border: 5px solid black;
+    }
+
+    .link2{
+        border: 5px dotted black;
+    }
+
+    .link3{
+        border: 5px dashed black;
+    }
+
+    .link4{
+        border: 5px groove black;
+    }
+
+    .link5{
+        border: 5px inset black;
+    }
+    
+</style>
+<body>
+    <nav>
+        <a href="" class="link1">Home</a>
+        <a href="" class="link2">About</a>
+        <a href="" class="link3">Contact</a>
+        <a href="" class="link4">Services</a>
+        <a href="" class="link5">Help</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Menu</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer {
+        background-color: rgb(0, 1, 11);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 80px 200px;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .footer-content {
+        margin: 0 40px;
+    }
+
+    .onecard>p {
+        word-spacing: 5px;
+        line-height: 30px;
+    }
+
+    h3 {
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    p,
+    li {
+        color: rgba(255, 255, 255, 0.612);
+        font-weight: 200;
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: small;
+    }
+
+    input {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        height: 38px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 3px;
+        border: none;
+    }
+
+    ::placeholder {
+        color: black;
+        position: absolute;
+        left: 10px;
+    }
+
+    button {
+        background-color: rgb(9, 135, 232);
+        color: white;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+
+    }
+</style>
+
+<body>
+    <footer>
+        <div class="footer-content onecard">
+            <h3>One Card</h3>
+            <p>Lorem ipsum dolor sr adipisicing elit. Distinctio aliquam laudantium, fuga porro
+                magarum cupreiciendis</p>
+        </div>
+
+        <div class="footer-content navigation">
+            <h3>Navigation</h3>
+            <ul>
+                <li>Name</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Offers</li>
+            </ul>
+        </div>
+
+        <div class="footer-content support">
+            <h3>Support</h3>
+            <ul>
+                <li>F.A.Q</li>
+                <li>Cookies Policy</li>
+                <li>Terms Of Service</li>
+                <li>Support</li>
+            </ul>
+        </div>
+
+        <div class="footer-content news-letter">
+            <h3>News Letter</h3>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Your email id here">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poken Go..</title>
+</head>
+<style>
+    H1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 10px 0 10px 0;
+    }
+    img{
+        height: 200px;
+        width: auto;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+        background-color: black;
+    }
+    .card{
+        height: 270px;
+        width: 250px;
+        border: 2px solid black;
+        position: absolute;
+    }
+    .card1{
+        background-color: green;
+    }
+    .card2{
+        background-color: rgb(53, 0, 128);
+        top: 160px;
+        left: 40px;
+    }
+    .card3{
+        background-color: rgb(128, 55, 0);
+        top: 205px;
+        left: 80px;
+    }
+    .card1:hover{
+        z-index: 3;
+    }
+    .card2:hover{
+        z-index: 2;
+    }
+    
+</style>
+<body>
+    <h1>Hover below to unveil the Pokemon..</h1>
+
+    <div class="container">
+        <div class="card card1"><p>Card 1</p><img src="pokemon one.png" alt=""></div>
+        <div class="card card2"><p>Card 2</p><img src="pokemon two.png" alt=""></div>
+        <div class="card card3"><p>Card 3</p><img src="pokemon three.png" alt=""></div>
+    </div>
+</body>
+</html>

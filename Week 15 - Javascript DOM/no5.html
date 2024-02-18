@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #the-image {
+        height: 150px;
+    }
+
+    body {
+        display: inline-flex;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <h1></h1>
+    <button id="toggle-image">Toggle Image</button>
+    <img src="./diya png.png" id="the-image">
+
+    <script>
+
+        let theButton = document.getElementById("toggle-image");
+        let theImage = document.getElementById("the-image");
+        let heading = document.querySelector("h1")
+
+        heading.innerText = "Your Image is Visible."
+        let shown = 0;
+
+        theButton.addEventListener("click", function(){
+            if (shown == 0) {
+                theImage.style.opacity = "0";
+                heading.innerText = "Your Image is Hidden."
+                shown = 1;
+            } else {
+                theImage.style.opacity = "100";
+                heading.innerText = "Your Image is Visible."
+                shown = 0;
+            }
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Update Profile Picture</h1>
+
+    <input type="file" id="the-input">
+
+    <h4>Your Profile Picture</h4>
+     
+    <img src="" id="the-image">
+
+    <script>
+        const chooseFile = document.querySelector("#the-input");
+        const picture = document.querySelector("#the-image");
+
+        chooseFile.onchange = function(){
+            picture.src = URL.createObjectURL(chooseFile.files[0]);
+        }
+
+    </script>
+
+</body>
+</html>

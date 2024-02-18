@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Button</title>
+</head>
+<style>
+    body {
+        height: 95vh;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    button {
+        background-image: linear-gradient(90deg, rgb(61, 97, 227), rgb(6, 6, 196));
+        color: white;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        animation: button 1.5s infinite;
+    }
+
+    @keyframes button {
+        0% {
+            transform: scale(1, 1) translate(0px, 0px);
+        }
+
+        30% {
+            transform: scale(1, 0.8) translate(0px, 10px);
+        }
+
+        75% {
+            transform: scale(1, 1.1) translate(0px, -25px);
+        }
+
+        100% {
+            transform: scale(1, 1) translate(0px, 0px);
+        }
+    }
+</style>
+
+<body>
+    <button>Click Me To Visit PW Skills</button>
+</body>
+
+</html>

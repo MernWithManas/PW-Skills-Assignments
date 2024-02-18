@@ -1,0 +1,14 @@
+Web accessibility refers to the practice of designing and developing websites and web content in a way that ensures people with disabilities can perceive, navigate, interact with, and understand the information effectively. The goal of web accessibility is to make the internet inclusive and available to all users, regardless of their abilities or disabilities.
+Assistive devices, also known as assistive technologies, play a crucial role in providing accessibility to individuals with disabilities. These devices help users interact with computers and digital content, enabling them to access information and navigate the web more effectively. Some of the major assistive devices that contribute to web accessibility include:
+
+(i)    Screen Readers: Screen readers are software applications that read out the content of a web page to users with visual impairments. They interpret the text and convert it into synthesized speech or Braille output. Screen readers enable visually impaired users to understand the content, navigate through links and headings, and interact with forms and other elements on the web page.
+
+(ii)   Screen Magnifiers: Screen magnifiers are tools that enlarge the content displayed on a computer screen. They are beneficial for users with low vision or visual impairments, allowing them to read text and view images more clearly.
+
+(iii)  Braille Displays: Braille displays are tactile devices that convert digital text into Braille characters. Blind users can read the Braille output by touch, enabling them to access textual content on websites and other digital documents.
+
+(iv)   Keyboard Navigation Devices: These devices are crucial for users with motor disabilities who may have difficulty using a traditional mouse. Keyboard navigation devices, such as modified keyboards, alternative input devices, and switch-based systems, allow users to navigate through web content and interact with elements using only the keyboard.
+
+(v)    Voice Recognition Software: Voice recognition software, also known as speech recognition software, allows users to control the computer and input text using their voice. This technology is essential for individuals with mobility impairments who may have difficulty using a keyboard or mouse.
+
+(vi)   Alternative Input Devices: These devices include sip-and-puff switches, eye-tracking systems, and head-controlled pointers. They are designed to cater to users with severe physical disabilities, enabling them to interact with computers and access web content through alternative means.

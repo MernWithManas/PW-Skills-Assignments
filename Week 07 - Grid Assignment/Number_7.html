@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery pro</title>
+</head>
+<style>
+    .gallery{
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 15px;
+        padding: 10px;
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: auto;
+    }
+    img{
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+    .one{
+        grid-row: 1 / 2;
+    }
+    .two{
+        grid-row: 1 / 3;
+    }
+    .three{
+        grid-row: 1 / 2;
+    }
+    .four{
+        grid-row: 2 / 4;
+    }
+    .five{
+        grid-row: 3 / 4;
+    }
+    .six{
+        grid-row: 2 / 4;
+    }
+</style>
+<body>
+    <div class="gallery">
+        <div class="images one landscape">
+            <img src="gallery/1.jpg" alt="">
+        </div>
+        <div class="images two portrait">
+            <img src="gallery/2.jpg" alt="">
+        </div>
+        <div class="images three landscape">
+            <img src="gallery/3.jpg" alt="">
+        </div>
+        <div class="images four portrait">
+            <img src="gallery/4.jpg" alt="">
+        </div>
+        <div class="images five landscape">
+            <img src="gallery/5.jpg" alt="">
+        </div>
+        <div class="images six portrait">
+            <img src="gallery/6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

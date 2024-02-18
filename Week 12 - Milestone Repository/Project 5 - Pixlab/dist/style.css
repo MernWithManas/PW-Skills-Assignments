@@ -1,0 +1,27 @@
+.navlinks> a:active{
+    font-weight: bold;
+}
+.fa-solid.fa-play{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.hero-images>img{
+    max-width: 120%;
+}
+.hero-images>img:nth-child(2){
+    max-width: 120%;
+    top: -440px;
+    right: 25px;
+}
+.business{
+    top: -730px;
+    right: 80px;
+}
+.happy{
+    top: -500px;
+    right: 118px;
+}
+

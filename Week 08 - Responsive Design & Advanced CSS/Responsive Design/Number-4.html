@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Responsive</title>
+</head>
+<style>
+    body{
+        background-color: rgb(38, 38, 38);
+    }
+    
+    h1{
+        color: rgb(144, 144, 144);
+    }
+    table{
+        color: white;
+        font-size: large;
+        width: 70%;
+        margin-left: 50px;
+        border-collapse: collapse;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        border-top: 1px solid rgba(255, 255, 255, 0.529);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.529);
+
+
+
+        /* display: block;
+        margin: auto; */
+    }
+    thead{
+        border-bottom: 2px solid white;
+    }
+    td{
+        padding:10px 10px;
+    }
+    tr:nth-child(even){
+        border-bottom: 1px solid white;
+    }
+    tr:nth-child(odd){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.427);
+    }
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+        
+        table{
+            width: 80%;
+            height: 80%;
+            overflow-y: scroll;
+            display: block;
+            font-size: medium;
+        }
+        td{
+        padding: 5px 5px;
+    }
+    }
+</style>
+<body>
+    <h1>Student DashBoard</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rahul Sharma</td>
+                <td>rahul.sharma@example.com</td>
+                <td>9876543210</td>
+            </tr>
+            <tr>
+                <td>Priya Patel</td>
+                <td>priya.patel@example.com</td>
+                <td>8765432109</td>
+            </tr>
+            <tr>
+                <td>Amit Singh</td>
+                <td>amit.singh@example.com</td>
+                <td>7650011101</td>
+            </tr>
+            <tr>
+                <td>Sneha Verma</td>
+                <td>sneha.verma@example.com</td>
+                <td>9854412210</td>
+            </tr>
+            <tr>
+                <td>Mohit Agarwal</td>
+                <td>mohit.agarwal@example.com</td>
+                <td>9845111105</td>
+            </tr>
+            <tr>
+                <td>Neha Gupta</td>
+                <td>neha.gupta@example.com</td>
+                <td>8721112200</td>
+            </tr>
+            <tr>
+                <td>Rajesh Kumar</td>
+                <td>rajesh.kumar@example.com</td>
+                <td>9844220124</td>
+            </tr>
+            <tr>
+                <td>Anita Desai</td>
+                <td>anita.desai@example.com</td>
+                <td>7845652241</td>
+            </tr>
+            <tr>
+                <td>Varun Malhotra</td>
+                <td>varun.malhotra@example.com</td>
+                <td>7461565666</td>
+            </tr>
+            <tr>
+                <td>Pooja Mehta</td>
+                <td>pooja.mehta@example.com</td>
+                <td>4513200455</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>

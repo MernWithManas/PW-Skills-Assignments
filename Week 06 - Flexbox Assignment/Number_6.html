@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Home</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+    * {
+        background-color: rgb(32, 32, 32);
+        font-family: sans-serif, 'Open Sans';
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        height: 88px;
+        margin-bottom: 25px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12%;
+    }
+
+    .search-area{
+        background-color: transparent;
+        color: white;
+        outline-style: none;
+        width: 30vw;
+        border: none;
+    }
+    .main-input{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.345);
+        padding: 11px 5%;
+        border-radius: 20px;
+        color: white;
+        outline-style: none;
+        width: 33vw;
+        margin-top: -28px;
+    }
+    .search {
+        height: 20px;
+    }
+
+    .mic {
+        height: 20px;
+        margin-right: 13px;
+    }
+
+    .lens {
+        height: 20px;
+    }
+    .mini-input{
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="Google"
+            class="logo" />
+        
+        <div class="mini-input">
+            <img class="search" src="seach.png" alt="">
+            <input type="text" class="search-area">
+            <img class="mic" src="Google_mic.svg.png" alt="">
+            <img class="lens" src="google lens.png" alt="">
+        </div>
+        <input type="text" class="main-input">
+    </div>
+</body>
+
+</html>

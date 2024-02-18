@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+    @font-face {
+        font-family: newyork;
+        src: url(Font/Chomsky.otf);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sitename {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        font-family: 'newyork';
+        background-color: blanchedalmond;
+        font-size: 30px;
+
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        background-color: rgb(255, 255, 255);
+        list-style: none;
+    }
+
+    nav>ul>li>a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-top: 1px double black;
+        border-bottom: 1px double black;
+    }
+
+    nav>ul>li :hover {
+        background-color: black;
+        color: white;
+    }
+
+    nav :hover {
+        color: white;
+    }
+
+    nav>ul>li>a {
+        padding: 15px;
+    }
+
+    .navigation> ul> li> a {
+        color: black;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    
+    .navigation{
+        padding-bottom: 20px;
+    }
+    .navigation> ul> li {
+        font-size: 25px;
+        list-style: none;
+        line-height: 50px;
+    }
+
+    main {
+        padding: 50px 70px 50px 70px;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        padding: 20px;
+    }
+
+    .question_one,
+    .question_two,
+    .question_three {
+        padding-bottom: 10px;
+        font-family: "oswald";
+        font-weight: 500;
+    }
+
+    p,
+    li {
+        font-family: "oswald";
+        font-weight: 300;
+    }
+
+    footer {
+        background-color: blanchedalmond;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        border-top: 1px double black;
+        padding: 25px;
+    }
+
+    .authorimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .credits>.authorimg>img {
+        height: 80px;
+        border-radius: 50%;
+        border: 1px double black;
+    }
+
+    footer h4 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    table {
+        border: 2px solid black;
+    }
+
+    td {
+        border: 1px double black;
+        padding: 5px;
+    }
+
+    .social_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: aliceblue;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .social_links> a {
+        color: rgb(0, 0, 0);
+    }
+
+
+
+</style>
+
+<body>
+
+    <header>
+
+        <div class="sitename">
+            <h1>The Html Times</h1>
+        </div>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Css Times.html">Css</a></li>
+                <li><a href="Javascript world news.html">Javascript World</a></li>
+                <li> <a href="Web Dev 24intoSeven.html">Web Dev 24*7</a></li>
+            </ul>
+
+
+
+
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        
+    <div class="navigation">
+        <ul>
+            <li><a href="#one">What is HTML ?</li></a>
+            <li><a href="#two">What is semantic HTML ?</li></a>
+            <li><a href="#three">Write a List of commonlly used semantic tags ?</li></a>
+        </ul>
+    </div> 
+
+        <!-- what is HTML?  What is semantic HTML? a list of commonlly used
+        semantic tags? -->
+        <div id="one" class="section1">
+            <h2 class="question_one">What is HTML ?</h2>
+            <p>
+                HTML stands for Hypertext Markup Language. It is the standard markup language used to create and
+                structure the content of websites and web applications. HTML is the foundation of web development and is
+                essential for defining the structure and layout of web pages.
+
+                In HTML, web developers use a series of elements, also known as tags, to mark up the different parts of
+                a web page, such as headings, paragraphs, images, links, and various other elements. These tags are
+                enclosed in angle brackets, and some of them require additional attributes to provide extra information
+                or functionality.
+
+                The primary purpose of HTML is to provide a structured way to present information on the web, allowing
+                browsers to interpret and render the content correctly. When you load a web page in your browser, the
+                browser reads the HTML code and displays the page accordingly, interpreting the tags and their
+                attributes to show text, images, links, and other elements in a coherent layout.
+            </p>
+        </div>
+
+        <div id="two" class="section2">
+            <h2 class="question_two">What is semantic HTML?</h2>
+            <p>
+                The term "semantic" in this context refers to the meaning or intent of the elements rather than just
+                their visual presentation. By using semantic HTML elements, web developers can create more accessible,
+                SEO-friendly, and maintainable web pages.
+
+                Some key points about semantic HTML:
+
+            <ol>
+                <li>Meaningful Tags: Instead of using generic container elements like
+                    &lt;div&gt; or &lt;span&gt; for layout purposes, semantic HTML encourages the use of specific tags
+                    that
+                    reflect the
+                    content's purpose. For example, using &lt;header&gt; for the header section, &lt;nav&gt; for the
+                    navigation
+                    menu,
+                    &lt;main&gt; for the main content, and &lt;footer&gt; for the footer section.
+                </li>
+                <li>Accessibility: Semantic HTML enhances web accessibility by providing more context to
+                    assistive technologies like screen readers. These technologies can better understand
+                    the content's structure and present it in a more organized and understandable manner
+                    to users with disabilities.
+                </li>
+                <li>SEO Benefits: Search engines favor well-structured and semantically meaningful HTML.
+                    Using appropriate tags helps search engines better understand the content and
+                    context of a webpage, potentially improving its search engine rankings.
+                </li>
+                <li>Code Readability: By choosing semantic tags, HTML code becomes more self-descriptive
+                    and easier to read for developers and other stakeholders, making it easier to
+                    maintain and collaborate on the project.
+                </li>
+                <li>Future-Proofing: As new HTML elements and features are introduced, using semantic
+                    HTML ensures that your webpages remain relevant and are compatible with evolving web
+                    standards.
+                </li>
+                <li>Responsive Web Design: Semantic HTML facilitates responsive web design, as it allows
+                    CSS to target specific elements and apply appropriate styles based on the content's
+                    semantic meaning. This helps in creating a consistent and flexible layout across
+                    different devices and screen sizes.
+                </li>
+            </ol>
+            </p>
+        </div>
+
+        <div id="three" class="section3">
+            <h2 class="question_three">Write a list of commonlly used
+                semantic tags?</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Sl No.</td>
+                        <td>Semantic Tags</td>
+                        <td>Use Cases</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>&lt;header&gt;</td>
+                        <td>Represents the introductory content of a page or section, usually containing headings,
+                            logos, and navigation menus.</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>&lt;nav&gt;</td>
+                        <td>Defines a section containing navigation links.</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>&lt;main&gt;</td>
+                        <td>Indicates the main content of a page, excluding headers, footers, and sidebars.</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>&lt;article&gt;</td>
+                        <td> Represents a self-contained piece of content that could be distributed and reused </td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>&lt;section&gt;</td>
+                        <td>Defines a generic section of content that can be grouped thematically.</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>&lt;aside&gt;</td>
+                        <td>Represents content that is tangentially related to the content around it, such as sidebars
+                            or pull quotes.</td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td>&lt;footer&gt;</td>
+                        <td>Represents the footer of a page or section, typically containing copyright information,
+                            links, and contact details.</td>
+                    </tr>
+                    <tr>
+                        <td>08</td>
+                        <td>&lt;figure&gt;</td>
+                        <td>Represents any content that is referenced from the main content, such as images,
+                            illustrations, videos, or code snippets.</td>
+                    </tr>
+                    <tr>
+                        <td>09</td>
+                        <td>&lt;header&gt;</td>
+                        <td>Represents the introductory content of a page or section, usually containing headings,
+                            logos, and navigation menus.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Represents a caption or legend for a &lt;figure&gt; element.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="credits">
+            <div class="authorimg">
+                <img src="Author/Hockey rkl passport.jpg" alt="manas">
+            </div>
+            <h4>
+                Manas Kumar Sahu
+            </h4>
+        </div>
+        <div class="social_links">
+            <a href="https://www.linkedin.com/in/manas-kumar-sahu-abb383155/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://twitter.com/Manas_ku_sahu" target="_blank"><i class="fa-brands fa-square-twitter fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/manas.zip/" target="_blank"><i class="fa-brands fa-square-instagram fa-lg"></i>
+            </a>
+            <a href="https://github.com/usernamemanas" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

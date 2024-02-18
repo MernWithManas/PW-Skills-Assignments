@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    nav>img {
+        height: 35px;
+        width: 30px;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        background-color: rgb(36, 36, 36);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu>a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    .menu>a:hover {
+        font-size: 17px;
+        color: rgb(83, 99, 216);
+    }
+
+    button:hover {
+        background-color: rgb(83, 99, 216);
+    }
+
+    button {
+        padding: 5px 28px;
+        background-color: rgb(38, 64, 255);
+        border: none;
+        color: white;
+    }
+
+    .fa-bars,
+    .fa-solid {
+        display: none;
+    }
+
+
+
+    .hero {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .bank-logos>img {
+        height: 50px;
+        width: 200px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+    }
+
+    .bank-logos {
+
+        margin-bottom: 50px;
+    }
+
+    .bank-logos>img {
+        width: 60%;
+    }
+
+    .left-section {
+        margin-top: 140px;
+        margin-left: 60px;
+        width: 800px;
+    }
+
+    .say-hi-to {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .brand-name {
+        color: rgb(8, 129, 221);
+        margin-bottom: 15px;
+        font-size: 50px;
+    }
+
+    .tagline {
+        color: rgb(8, 129, 221);
+        margin-bottom: 40px;
+    }
+
+    video {
+        width: 90%;
+        height: 90vh;
+        float: right
+    }
+
+    footer {
+        background-color: black;
+        padding: 90px 0px;
+        text-align: center;
+    }
+
+    h3 {
+        color: rgb(80, 80, 255);
+        font-size: 38px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    footer>p {
+        color: white;
+        line-height: 33px;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 768px) {
+
+        .menu>a,
+        .login {
+            display: none;
+        }
+
+        .fa-bars,
+        .fa-solid {
+            font-size: 30px;
+            float: right;
+            position: absolute;
+            right: 40px;
+            display: flex;
+            cursor: pointer;
+            color: white;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            width: auto;
+            margin: 80px 60px;
+            margin-bottom: 0px;
+        }
+
+        .say-hi-to {
+            font-size: 20px;
+        }
+
+        .brand-name {
+            color: rgb(8, 129, 221);
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+
+        .tagline {
+            color: rgb(8, 129, 221);
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+
+        .bank-logos>img {
+            display: block;
+            width: 80%;
+            height: 80px;
+        }
+
+        .hero-para {
+            font-size: 16px;
+        }
+
+        video {
+
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            padding: 50px 0;
+        }
+
+        footer {
+            background-color: rgb(255, 255, 255);
+            padding: 40px 0px;
+            text-align: center;
+        }
+
+        h3 {
+            color: rgb(80, 80, 255);
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        footer>p {
+            color: rgb(0, 0, 0);
+            line-height: 28px;
+            font-size: 18px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- NAVIGATION BAR GOES HERE !!!!!!!!!!!!! -->
+
+    <nav>
+        <img src="apple logo.png" alt="" class="logo">
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button class="login">Login</button>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+
+    <!-- HERO SECTION GOES HERE!!!!!!!!!!!! -->
+
+    <div class="hero">
+        <div class="left-section">
+            <p class="say-hi-to">Say Hi To</p>
+            <h1 class="brand-name">One Card</h1>
+            <p class="tagline">Co-branded Card Issuers:</p>
+            <div class="bank-logos">
+                <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="sponsor1" />
+            </div>
+            <p class="hero-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nihil assumenda,
+                aliquam voluptate dignissimos numquam molestiae dolorem quos corporis sapiente tenetur, hic perferendis
+                nobis velit ipsam quod! Rem, quia voluptas!</p>
+        </div>
+        <div class="right-section">
+            <video src="Assets/say_hi_2x_d3_.mp4" autoplay></video>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION GOES HERE.............  -->
+    <footer>
+        <h3> No Hidden Fees Ever</h3>
+        <p>No Joing Fees. <br>
+            No Annual Fees. <br>
+            No Rewards Redemption Fees.
+        </p>
+    </footer>
+</body>
+
+</html>
